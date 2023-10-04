@@ -1,0 +1,39 @@
+.contact{
+    background-color: #f6f6f6;
+}
+.contact h1{
+    grid-area: ab_tit;
+    font-size: 75px;
+    color: #ebeced;
+    position: relative;
+    left: 40%;
+}
+.contact h1::before{
+    position: absolute;
+    content: "Less is more work";
+    font-size: 15px;
+    color: black;
+    left: 4%;
+    top: 81%;
+    font-weight: lighter;
+    font-weight: bold;
+}
+.texts{
+    font-weight: bold;
+    font-size: 20px;
+    translate: 10px 0;
+    font-size: 31px;
+    translate: 450px 0;
+}
+.texts :first-child{
+    color: #2c4755;
+    translate: 20px 0;
+}
+.texts :last-child{
+    color: #2c4755;
+    translate: 20px 0;
+}
+.texts a{
+  text-decoration: none;
+  color: #10cab7;
+}

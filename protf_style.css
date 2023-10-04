@@ -1,0 +1,59 @@
+.protf{
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr auto ;
+    grid-template-areas: 'tit tit ti'
+                          'pic1 pic2 pic3';
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+.protf h1{
+    grid-area: tit;
+    font-size: 75px;
+    color: #ebeced;
+    position: relative;
+    left: 60%;
+}
+.protf h1::before{
+    position: absolute;
+    content: "If you do it right, it will last forever.";
+    font-size: 15px;
+    color: black;
+    left: 5%;
+    top: 81%;
+    font-weight: lighter;
+    font-weight: bold;
+}
+.protf img{
+    width: 95%;
+}
+.protf div{
+    position: relative;
+}
+.protf div div{
+    width: 95%;
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: start;
+    background-color: white;
+}
+.protf div h2{
+    translate: 25px;
+}
+.protf div pre{
+    translate: -78px -16px;
+}
+.pic1{
+    grid-area: pic1;
+}
+.pic2{
+    grid-area: pic2;
+}
+.pic3{
+    grid-area: pic3;
+}

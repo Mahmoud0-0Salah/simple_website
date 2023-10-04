@@ -1,0 +1,79 @@
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:'ab_tit ab_tit' 
+                        'ab_pic ab_text1'
+                        'ab_pic ab_text2';
+}
+.about h1{
+    grid-area: ab_tit;
+    font-size: 75px;
+    color: #ebeced;
+    position: relative;
+    left: 40%;
+}
+.about h1::before{
+    position: absolute;
+    content: "Less is more work";
+    font-size: 15px;
+    color: black;
+    left: 4%;
+    top: 81%;
+    font-weight: lighter;
+    font-weight: bold;
+}
+.ab_text1,.ab_text2{
+    translate: -150px;
+}
+.ab_text1{
+    grid-area: ab_text1;
+    line-height: 24px;
+    font-weight: bold;
+}
+.ab_text2{
+    grid-area: ab_text2;
+    line-height: 24px;
+}
+.ab_text2 :first-child{
+    width: 90%;
+    height: 0px;
+    translate: 104px -19px;
+    background-color: #10cab7;
+}
+.ab_pic{
+    position: relative;
+    grid-area: ab_pic;
+    width: 300px;
+    margin-left: 35px;
+}
+.ab_pic img{
+    width: 100%;
+}
+.ab_pic :nth-child(3){
+    position: absolute;
+    top: -7%;
+    left: -6%;
+    width: 60px;
+    height: 503px;
+    background-color: #ebeced;
+    z-index: -1;
+}
+.ab_pic :last-child{
+    position: absolute;
+    top: -3%;
+    left: 92%;
+    width: 60px;
+    height: 406px;
+    background-color: #10cab7;
+    z-index: -1;
+}
+.square{
+    position: absolute;
+    top: 76%;
+    left: 99%;
+    width: 150px;
+    height: 70px;
+    background-color: #10cab7;
+    z-index: -1;
+}
